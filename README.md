@@ -17,7 +17,7 @@ To get started with the Bank of Flatiron application, follow these steps:
 1. Clone the Repository
 bash
 Copy code
-git clone `git@github.com:Margaret617/phase-2-code1.git`
+git clone `git@github.com:Margaret617/code-1.git`
 cd bank-of-flatiron
 2. Install Dependencies
 Ensure you have Node.js and npm installed. Run the following command to install the required dependencies:
