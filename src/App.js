@@ -47,7 +47,6 @@ function App() {
       <h2>~Your Finances , Our Priority~</h2>
       <SearchBar onSearch={handleSearch}/>
       <TransactionForm onAdd={addTransaction}/>
-      <TransactionTable transactions={filteredTransactions}/>
     
       </div>
     )
