@@ -9,6 +9,14 @@ function TransactionTable() {
           <th>AMOUNT</th>
         </tr>
       </thead>
+      <tbody>
+        {transactions.map((transaction,index)=>(
+            <tr key={index}>
+                <td>{transaction.description}</td>
+                <td>{transaction.amount}</td>
+            </tr>
+        ))}
+      </tbody>
       </table>
   )
 }
