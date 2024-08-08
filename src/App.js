@@ -11,14 +11,14 @@ function App() {
   const [searchTerm,setSearchTerm]=useState('');
 
   useEffect(() =>{
-    fetch('http://localhost:3000/transactions')
-    .then(res =>res.json())
-    .then(data =>setTransactions(data))
-    .catch(error => console.log(error));
+    fetch('https://challenge-jade.vercel.app/transactions')
+    .then((res) =>res.json())
+    .then((data) =>setTransactions(data))
+    //.catch(error => console.log(error));
   } , []);
-
+console.log(transactions);
   function addTransaction(transaction){
-    fetch('http://localhost:3000/transactions', {
+    fetch('https://challenge-jade.vercel.app/transactions', {
       method: 'POST',
       headers:{
   'Content-Type':'application/json',
@@ -47,7 +47,7 @@ function App() {
       <h2>~Your Finances , Our Priority~</h2>
       <SearchBar onSearch={handleSearch}/>
       <TransactionForm onAdd={addTransaction}/>
-    
+      <TransactionTable transactions={filteredTransactions}/>
       </div>
     )
     
