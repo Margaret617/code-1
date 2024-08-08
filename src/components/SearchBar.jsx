@@ -1,9 +1,9 @@
 import React from 'react'
 
-function SearchBar() {
+function SearchBar({onSearch}) {
   return (
-    <input className="searchinput" type="text" placeholder="TRANSACTIONS?" onChange={(e)=>onSearch(e.target.value)}/>
-);
-  
+    <input className='searchinput' type="text" placeholder="TRANSACTIONS?" onChange={(e)=>onSearch(e.target.value)}/>
+  );
 }
 
+export default SearchBar

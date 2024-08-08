@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TransactionTable() {
+function TransactionTable({transactions}) {
   return (
     <table>
       <thead>

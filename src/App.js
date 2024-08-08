@@ -1,5 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route,Routes } from 'react-router-dom';
 import './App.css';
+import SearchBar from './components/SearchBar';
+import TransactionForm from './components/TransactionForm';
+import TransactionTable from './components/TransactionTable';
+import { useEffect , useState } from 'react';
 
 function App() {
   const [transactions,setTransactions] = useState([]);
